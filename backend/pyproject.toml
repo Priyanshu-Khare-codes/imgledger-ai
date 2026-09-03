@@ -1,7 +1,7 @@
 [project]
 name = "backend"
 version = "1.0.0"
-description = "HH Goa Task 3 — Face Identification & Blockchain Verification"
+description = "ImgLedger AI — Face Identification & Blockchain Verification"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -24,6 +24,12 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = "src"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
