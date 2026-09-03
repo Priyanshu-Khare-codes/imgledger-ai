@@ -1,0 +1,30 @@
+[project]
+name = "backend"
+version = "1.0.0"
+description = "HH Goa Task 3 — Face Identification & Blockchain Verification"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "PicImageSearch>=3.12.11",
+    "onnxruntime>=1.29.0",
+    "opencv-python-headless>=5.0.0",
+    "numpy>=2.5.0",
+    "pillow>=12.0.0",
+    "aiofiles>=25.0.0",
+    "fastapi>=0.141.0",
+    "uvicorn>=0.52.0",
+    "python-multipart>=0.0.20",
+    "python-dotenv>=1.2.0",
+    "rich>=15.0.0",
+    "httpx>=0.28.0",
+    "pyquery>=2.1.0",
+    "lxml>=5.4.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

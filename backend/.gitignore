@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment secrets
+.env
+
+# Downloaded wheel files
+*.whl
+
+# Downloaded candidate images and personal data
+data/candidates/
+data/input/
+
+# InsightFace model cache (auto-downloaded)
+# ~/.insightface/
+
+# Blockchain records (contains hash records - ok to commit if desired)
+# data/records/chain.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
